@@ -1,0 +1,54 @@
+//projeto integrador
+//desenvolver um jogo chamado lig4 com interface grafica
+//1 passo entender o jogo
+//2 passo criar a interface grafica
+//3 passo criar a logica do jogo
+//4 passo criar a interacao entre a rede neural e a inteligencia artificial
+//5 passo criar a condição de vitoria
+//6 passo criar a condição de derrota
+//7 passo criar a condição de empate
+//8 passo criar a condição de jogada invalida
+//9 passo criar a condição de jogada valida
+//10 passo esclarecer as regras do jogo
+//... inicio dos passos ...
+//1 passo enteder o jogo e os recursos necessarios para o desenvolvimento do jogo matrizes e vetores.
+// regras do jogo
+//1. O jogo é jogado em um tabuleiro de 8 linhas e 8 colunas.
+//2. No início do jogo cada jogador escolhe uma cor (amarela ou azul) e recebe a quantidade de fichas da cor correspondente
+//3. O jogador que escolheu a cor amarela ( supositorio )começa o jogo.
+//4. O jogador deve colocar uma ficha na coluna que desejar, a ficha cai até a última linha disponível.
+//5. O jogador que conseguir alinhar 4 fichas da mesma cor em linha, coluna ou diagonal vence o jogo.
+//6. Se o tabuleiro ficar cheio e ninguém tiver conseguido alinhar 4 fichas da mesma cor, o jogo termina empatado.
+//7. O jogo pode ser jogado por 2 jogadores ou por 1 jogador contra a máquina.
+//8. o jogo começa da ultima linha e vai subindo ate a primeira linha
+// 9. o jogo começa com o tabuleiro em branco.
+//
+//inicio do codigo
+//importando as bibliotecas necessarias para o desenvolvimento do jogo
+import java.util.Scanner;
+public class call4 {
+public static void main(String[] args) {
+    try (Scanner ler = new Scanner(System.in)) {
+        // Construtor de pessoas
+         System.out.println("Bem vindo ao jogo LIGUE 4");
+         System.out.println("digite o nome do jogador 1");
+            String nome1 = ler.nextLine();
+            System.out.println( "Bem vindo " + nome1);
+            System.out.println("digite o nome do jogador 2");
+            String nome2 = ler.nextLine();
+            System.out.println( "Bem vindo " + nome2);
+         // Escolhendo a cor das fichas
+            System.out.println("Escolha a cor das fichas");
+            System.out.println("1 - amarelo");
+            System.out.println("2 - azul");
+            int cor = ler.nextInt();
+            if (cor == 1){
+                System.out.println("O jogador 1 escolheu amarelo");
+                System.out.println("O jogador 2 Ficara com a cor azul");
+            }else{
+                System.out.println("O jogador 1 escolheu azul");
+                System.out.println("O jogador 2 Ficara com a cor amarelo");
+            }
+    }  
+}
+}
